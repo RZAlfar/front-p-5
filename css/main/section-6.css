@@ -1,0 +1,117 @@
+
+:root{
+--text-primary: black;
+--text-secondary: #D6E4E5;
+--bg-primary: #EB6440;
+--bg-secondary:  #497174;
+}
+
+/* ================== */
+
+
+
+section:nth-of-type(6) {
+background-color: var(--bg-secondary);
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+section:nth-of-type(6) box {
+width: 55vw;
+height: 70vh;
+background-color: #ffff;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+section:nth-of-type(6) box up{
+height: 65%;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+justify-content: center;
+gap: 40px;
+}
+
+section:nth-of-type(6) box up h1{
+font-size: 3rem;
+text-transform: capitalize;
+
+}
+
+section:nth-of-type(6) box up form{
+display: flex;
+flex-direction: row;
+width: 70%;
+height: 50px;
+
+}
+section:nth-of-type(6) box up form input:nth-of-type(1){
+width: 80%;
+border: 1px solid var(--bg-secondary);
+padding: 5px 10px;
+}
+
+section:nth-of-type(6) box up form input:nth-of-type(1):focus{
+border: none;
+
+}
+section:nth-of-type(6) box up form input:nth-of-type(2){
+width: 40%;
+background-color: var(--bg-primary);
+color: #fff;
+outline: none;
+border: none;
+cursor: pointer;
+transition: .8s;
+}
+
+section:nth-of-type(6) box up form input:nth-of-type(2):hover{
+background-color: var(--bg-primary);
+width: 50%;
+}
+section:nth-of-type(6) box down{
+height: 35%;
+display: flex;
+flex-direction: column;
+background-color: #f2f2f2;
+width: 100%;
+font-size: 2rem;
+font-weight: bold;
+text-transform: capitalize;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+
+section:nth-of-type(6) box links{
+font-size: 22px;
+display: flex;
+flex-direction: row;
+gap: 15px;
+
+}
+
+section:nth-of-type(6) box links a{
+text-decoration: none;
+color: black;
+font-size: 30px;
+border-bottom: 1px solid transparent;
+transition: .8s;
+width: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 2px;
+}
+
+section:nth-of-type(6) box links a:hover{
+border-bottom: 1px solid var(--bg-primary);
+transform: translateY(-5px);
+color: var(--bg-primary);
+}

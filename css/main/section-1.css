@@ -1,0 +1,116 @@
+
+:root{
+--text-primary: black;
+--text-secondary: #D6E4E5;
+--bg-primary: #EB6440;
+--bg-secondary:  #497174;
+}
+
+/* ================== */
+
+section:nth-of-type(1){
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 30px;
+text-align: center;
+}
+
+section:nth-of-type(1) h1{
+font-size: 4rem;
+text-transform: capitalize;
+
+
+}
+section:nth-of-type(1) p{
+width: 30%;
+}
+
+
+section:nth-of-type(1) block:nth-of-type(1){
+display: block;
+background-color: var(--bg-primary);
+width: 400px;
+height: 400px;
+position: absolute;
+right: 200px;
+bottom: 100px;
+border-radius: 50%;
+z-index:-1;
+}
+
+
+section:nth-of-type(1) block:nth-of-type(2){
+display: block;
+background-color: var(--bg-secondary);
+width: 400px;
+height: 400px;
+position: absolute;
+right: 0;
+top: 0;
+border-radius: 50%;
+z-index:-3;
+}
+
+
+section:nth-of-type(1) block:nth-of-type(3){
+display: block;
+background-color: var(--bg-secondary);
+width: 700px;
+height: 700px;
+position: absolute;
+left: -200px;
+top: -200px;
+border-radius: 50%;
+z-index:-1;
+}
+
+
+/* section:nth-of-type(1) button{
+color: #365e5f;
+outline: none;
+border:3px solid var(--bg-secondary);
+background-color: transparent;
+font-size: 1.6rem;
+font-weight: bolder;
+padding: 5px 70px;
+cursor: pointer;
+transition: .6s;
+} */
+
+section:nth-of-type(1) button:hover{
+background-color: var(--bg-secondary);
+color: var(--text-secondary)
+
+}
+
+/* ===== button ===== */
+
+.button-1 {
+text-decoration: none;
+color: black;
+border:none;
+outline: none;
+  position: relative;
+  padding: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  overflow: hidden;
+  transition: 0.2s;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+}
+
+.button-1:hover {
+  background-color: var(--bg-secondary);
+  color: #fff;
+  box-shadow: 0 0 10px var(--bg-secondary), 0 0 40px var(--bg-secondary), 0 0 80px var(--bg-secondary);
+  transition: .3s;
+}

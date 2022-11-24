@@ -1,0 +1,122 @@
+:root{
+--text-primary: black;
+--text-secondary: #D6E4E5;
+--bg-primary: #EB6440;
+--bg-secondary:  #497174;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 70vh;
+background-color: var(--text-secondary);
+flex-wrap: wrap;
+}
+
+footer up{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: fit-content;
+margin: auto;
+flex-wrap: wrap;
+overflow: hidden;
+}
+
+footer up part{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+justify-content: flex-start;
+gap:10px;
+flex-wrap: wrap;
+height: 100%;
+overflow: hidden;
+}
+footer up part:last-of-type p{
+line-height: 200%;
+text-transform: capitalize;
+color: #497174;
+font-size: 14px;
+}
+
+footer up part:first-of-type{
+width: 25%;
+font-size: 14px;
+gap: 10px;
+}
+
+footer up part h1{
+font-size: 16px;
+line-height: 40px;
+font-weight: bold;
+text-transform: capitalize;
+color: #3c5758;
+}
+
+footer up part a{
+text-decoration: none;
+color: var(--bg-secondary);
+line-height: 27px;
+font-size: 14px;
+transition: .3s;
+text-transform: capitalize;
+
+}
+footer up part a:hover{
+transform: translateX(10px);
+color: var(--bg-primary);
+}
+
+f-logo{
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+color: var(--bg-secondary);
+}
+
+f-logo img{
+width:50px;
+opacity: 0.6;
+}
+
+body > footer > up > part:nth-child(1) > f-logo > h1{
+font-size:30px;
+transform: translateX(-20px);
+}
+body > footer > up > part:nth-child(1) > p{
+height: 100px;
+
+}
+body > footer > up > part:nth-child(1) > links{
+width: 150px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+padding-top:10px ;
+
+
+}
+body > footer > up > part:nth-child(1) > links a{
+font-size: 16px;
+transition: .5s;
+}
+body > footer > up > part:nth-child(1) > links a:hover{
+color: #EB6440;
+transform: translateX(0);
+}
+
+body > footer > down{
+display: flex;
+width: fit-content;
+margin: 5px auto;
+font-size: 14px;
+padding: 20px;
+color: #3c5758;
+}
